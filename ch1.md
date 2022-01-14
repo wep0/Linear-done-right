@@ -79,33 +79,13 @@ $\implies w = w + 0 = w + (w + v) = w + (w' + v) = w' + (w + v) = w' + 0 = w'$
 
 **The number 0 times a vector**: 
 
-$0v = (0+0)v = 0v + 0v \implies 0v + (- 0v) = 0v + 0v + (- 0v) \implies 0v = 0$\
+$0v = (0+0)v = 0v + 0v \implies 0v + (- 0v) = 0v + 0v + (- 0v) \implies 0v = 0$
 
-\
-
-
-
-\
-
-\
-
-
-
-   76776ytyytytyr\\\\\
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
- ``   ` ` ` ` ` ` ` ` `  ` ` ` ` ` `                    n  bjhjbhjhbhjbh               `
-
-**The number $a$ times the v       `tor 0**: 
+**The number $a$ times the vector 0**: 
 
 $a0 = a(0+0) = a0 + a0 \implies a0-a0 = a0 + a0-a0 \implies 0 = a0$
 
-**The number -1 times a vector $v$**:``````````````````````````````````````````````````````````````````````````````````````````````````` 
-
-
-
-
+**The number -1 times a vector $v$**
 
 $-1 v + 2v = (-1+2)v = v \implies -1v + 2v - 2v = v-2v \implies -1v = v - 2v $
 
@@ -115,9 +95,46 @@ $\implies -1v + 1v = v - 2v + 1v = 0 \implies v + (-2+1)v = 0 \implies v + -1v =
 
 
 
+## 1.C
+
+**Subspace**
+
+1.34:
+**Conditions for a subspace**:
+
+A subset $U$ of $V$ must satisfy these conditions:
+
+A. *Additive identity*: $0 \in U$ (ensure the additive identity of $V$ is in $U$ )
+
+B. *closed under addition*: $u, w \in U \implies u + w \in U$ (addition makes sense on $U$)
+
+C. *closed under scalar multiplication*: $a\in F, u \in U \implies au \in U$ ($-u$ exists)
 
 
 
+**1.36: Sum of subsets**
+
+$U_1 + ...+U_m = \{u_1+...+u_m: u_1 \in U_1, ..., u_m \in U_m\}$
+
+**1.38**： $U = \{(x, x, y, y) \in F^4: x,y \in F\}, W = \{(x, x, x, y) \in F^4: x,y \in F\}$
+
+$U + W = (x_1 + x_2, x_1+x_2, y_1+x_2, y_1+y_2) \implies (x,x,y,z)$
+
+**1.40 Direct Sum**: Suppose $U_1, ...,U_m$ are subspaces of $V$, every element of $U_1+...+U_m$ could be written in the form $u_1 + ...+u_m$, where each $u_j \in U_j$
+
+**1.43 Example**: 
+$$
+U_1 = \{(x,y,0) \in F^3: x,y \in F\}\\
+U_2 = \{(0,0,z) \in F^3: z \in F\}\\
+U_3 = \{(0,y,y) \in F^3: y \in F\}
+$$
+$U_1 + U_2 + U_3 = F^3$
+
+Consider this vector $(0,0,0)$
+
+$(0,0,0) = (0,1,0) + (0,0,1) + (0,-1,-1) = (0,0,0)+(0,0,0)+(0,0,0)$
+
+So, $U_1 + U_2, + U_3$ is not direct sum.
 
 
 

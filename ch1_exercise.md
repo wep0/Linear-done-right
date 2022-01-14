@@ -100,7 +100,6 @@ $$
 \implies 0 = -v + v
 $$
 
-
 6.
 
 No: Suppose $I: \{\infin\} \cup \{-\infin\}, G: R \cup I\}$, and definition of sum and “$0$” are same as $R$'s, consider this case:
@@ -110,3 +109,68 @@ $1 + \infin + (-\infin) = \infin + (-\infin) = 0$
 $1 + (\infin + (-\infin)) = 1+0 = 1 \neq 0$
 
 It doesn’t satisfy the property of associativity, so its not.
+
+# 1.C
+
+2.
+
+*(a)*: $\{(x_1, x_2, x_3, x_4)\in F^4: x_3=5x_4 + b \}$ is not subspace of $F^4$ when $b\ne 0$
+
+**Counter-example:** suppose $u = (x_1, x_2, x_3, x_4)$
+
+$u+u = (2x_1, 2x_2, 2x_3, 2x_4) = (x_1', x_2', x_3', x_4')$
+
+we know $x_3=5x_4 + b \implies x_3' = 2x_3 = 10x_4 + 2b$
+
+and also $x_3' = 5x_4' + b \implies 2x_3 = 5*(2x_4) + b = 10x_4 + b \neq 10x_4 + 2b\ since\ b \neq 0$, and which is contradicted.
+
+*(b)*: 
+
+Prove the set of continuous real-valued functions on the interval $[0,1]$ is a subspace of $R^{[0,1]}$
+
+$F: \{[0,1] \to \R \}$:
+
+**1. Additive Identity**: $f \in F, f: [0,1] \to 0$
+
+**2. close under addition:** Suppose $f, g \in F$, and $h = f+g$
+
+$f, g \in F, f,g: [0,1] \to \R， h: [0,1]\to \R + \R = \R$
+
+we also want to prove when $f, g$ are continuous, $h=f+g$ is continuous.
+
+$f,g$ are continuous $\iff$ $\forall x \in [0,1], \lim_{x' \to x}{f(x')}=f(x), \lim_{x' \to x}{g(x')}=g(x)$
+
+$\forall x \in [0,1], h(x) = f(x) + g(x) \in \R$
+
+$\implies \forall x \in [0,1], \lim_{x' \to x}{h(x')} = \lim_{x' \to x}{f(x')} + \lim_{x' \to x}{g(x')}$
+
+$\implies = f(x) + g(x) = h(x)$
+
+$\forall x \in [0,1], h(x) = \lim_{x' \to x}{h(x')} \iff h$ is continuous.
+
+**3. closed under scalar multiplication**: similar with second item
+
+
+
+3.
+
+**Additive identity**: $0 \in f, 0: 0(x) = 0$, $0'(x) = 0 \implies 0'(-1) = 3(0(2)) $
+
+**Close under addition**: $u,w \in f, u,w: (-4,4) \to \R$
+
+$(u + w)(x) = u(x) + w(x) \in \R + \R = \R$
+
+$(u+w)'= u'+w' \implies (u+w)'(-1) = u'(-1) + w'(-1) = 3(u(2))+3(w(2))$
+
+$= 3(u(2)+w(2)) = 3((u+w)(2))$
+
+So, $(u+w)'(-1) = 3((u+w)(2))$
+
+**Closed under scalar multiplication**: Suppose $a \in \R, u \in f$
+
+$au: (-4,4) \to a\R = \R $
+
+$(au)'(-1) = a(u'(-1)) = a(3u(2)) = 3au(2) = 3(au(2))$
+
+4.
+
