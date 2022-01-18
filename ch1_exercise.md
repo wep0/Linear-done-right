@@ -18,7 +18,6 @@ $$
 = \frac{2+6}{8}  = 1\\
 $$
 
-
 3.
 $$
 i = f^2, f\in F\\
@@ -34,6 +33,8 @@ a^2 - b^2 = 0 \\
 a = b: 2a^2 = 1, a=\pm \frac{\sqrt{2}}{2}\\
 a = -b: -2a^2 = 1, a = \sqrt{-\frac{1}{2}}
 $$
+
+
 The two sqrts are $\pm \frac{\sqrt{2}}{2}$
 
 4.
@@ -45,8 +46,6 @@ $$
 
 6.
 
-
-
 10.
 $$
 x \in R^4, st. (4,-3,1,7) + 2x = (5,9,-6,8)\\
@@ -54,8 +53,6 @@ x \in R^4, st. (4,-3,1,7) + 2x = (5,9,-6,8)\\
 x = (1/2, 6, -7/2, 1/2)
 $$
 11.
-
-
 
 # Exercise 1.B
 
@@ -89,8 +86,6 @@ The empty set is failed to satisfy the property of additive inverse since thereâ
 
 Answer to confusion about antecedent and implication ($False \implies True$): https://math.stackexchange.com/questions/4178665/the-empty-set-fails-to-satisfy-only-one-of-the-axioms-of-vector-spaces-which-on
 
-
-
 5.
 $$
 0v = 0,\forall v \in V\\
@@ -112,7 +107,7 @@ It doesnâ€™t satisfy the property of associativity, so its not.
 
 # 1.C
 
-2.
+Q2.
 
 *(a)*: $\{(x_1, x_2, x_3, x_4)\in F^4: x_3=5x_4 + b \}$ is not subspace of $F^4$ when $b\ne 0$
 
@@ -150,9 +145,7 @@ $\forall x \in [0,1], h(x) = \lim_{x' \to x}{h(x')} \iff h$ is continuous.
 
 **3. closed under scalar multiplication**: similar with second item
 
-
-
-3.
+Q3.
 
 **Additive identity**: $0 \in f, 0: 0(x) = 0$, $0'(x) = 0 \implies 0'(-1) = 3(0(2)) $
 
@@ -172,5 +165,178 @@ $au: (-4,4) \to a\R = \R $
 
 $(au)'(-1) = a(u'(-1)) = a(3u(2)) = 3au(2) = 3(au(2))$
 
-4.
+Q4.
 
+$f: {[0,1] \to R}$, and ${f: \int_0^1 f = b}$
+
+**Known**: $f$ is a subspace of $R^{[0,1]}$
+
+Additive id exists: $0 \in f,f_0: 0(x) = 0, \int_0^1 f = 0 = b$
+
+Q5.
+
+*Closed multiplication is not satisfied*:
+
+$a \in I, x \in R \implies ax \in I, ax \notin R$
+
+
+
+Q6.
+
+**No.**
+
+$A:\{(a,b,c)\in \R^3, a^3=b^3\}$
+
+Since $a,b\in R, a^3 = b^3 \iff a = b$
+
+$\implies A:{(a,b,c)\in \R^3, a=b}$
+
+*Closed Addition*: $u,w \in A, u = (a_1, b_1, c_1), w = (a_2, b_2, c_2), a_1 = b_1, a_2=b_2$
+
+$u + w = (a_1 + a_2, b_1 + b_2, c_1 + c_2), a_1 + a_2 = b_1+b_2$
+
+*Closed Muptiplication*: 
+
+$k \in F, u \in A, u = (a,b,c)$
+
+$k\in I \implies ku = (ka,kb,kc) \notin \R^3$
+
+
+
+**No.**
+
+$A:{(a,b,c)\in C^3, a^3=b^3}$
+
+Consider this case:
+
+$p,q \in A$
+
+$p = (\sqrt{3} + i, -\sqrt{3}+i, 0), (\sqrt{3} + i)^3 = (-\sqrt{3}+i)^3 = 8i$
+
+$q = (\sqrt{3} + i, -2i, 0), (\sqrt{3} + i)^3 = (-2i)^3 = 8i$
+
+
+
+$p+q = (2\sqrt{3} + 2i, -\sqrt{3}-i, 0)$
+
+$(2\sqrt{3} + 2i)^3 = 64i,  (-\sqrt{3}-i)^3 = -8i, 64i \ne -8i$
+
+$\implies p+q \notin A$
+
+
+
+Q7.
+
+Consider this case:
+
+$U: \{(p,q), p,q\in [-1,1]\}$
+
+
+
+$u \in U: a < -1, a > 1 \implies au \notin U$
+
+
+
+Q8.
+
+$U: \{(p,q), p,q \neq 0\}$
+
+There is no additive identity in $U$.
+
+
+
+Q9.
+
+Suppose $Q$ is the set of all $f$.
+
+
+
+*Additive Id*:
+
+$0\in Q, 0(x) = 0, x \in \R \implies p \in \R^+, x+p \in \R, 0(x+p) = 0 = 0(x)$
+
+
+
+*Closed Add*:
+
+$f,g \in Q, f(x+p) = f(x), g(x+p) = g(x)$
+
+$(f+g)(x) = f(x)+g(x), (f+g)(x+p) = f(x+p)+g(x+p) = f(x) + g(x)$
+
+
+
+*Closed Mul*: 
+
+$a \in F, f \in Q, af(x) \in R$
+
+$af(x+p) = a(f(x+p)) = a(f(x)) = af(x)$
+
+ 
+
+
+
+Q10.
+
+*Additive Id*: 
+
+$\{0\}\in U_1 \cap V, \{0\}\in U_2 \cap V \implies \{0\}\in U_1 \cap U_2$
+
+
+
+*Closed Addition*: $U_1, U_2 \in V, \forall u_1, u_2 \in U_1 \cap U_2 \implies u_1 + u_2 \in U_1 \wedge u_1 + u_2 \in U_2 \iff u_1+u_2 \in U_1 \cap U_2$ 
+
+*Closed Multiplication*:
+
+$a\in F, u \in U_1 \cap U_2 \implies  au \in U_1 \wedge au \in U_2 \implies au \in U_1 \cap U_2$
+
+
+
+Q11.
+
+Based on the result from Question 10, by induction, we could prove that.
+
+
+
+Q12.
+
+Suppose $U_1, U_2$ are subspaces of $V$
+
+Assume $U_1 \cup U_2$ is a subspace of $V$ when $U_1 \notin U_2$
+
+$U_1 \notin U_2 \implies $
+
+$U_1' = U_1 \setminus (U_1 \cap U_2) \ne \empty$
+
+$U_2' = U_2 \setminus (U_1 \cap U_2) \ne \empty$
+
+Consider $u_1 \in U_1', u_2 \in U_2'$
+
+And we know $U_1' \in U_1, U_2' \in U_2' \implies U_1', U_2' \in U_1 \cup U_2$ by definitions of $U_1', U_2'$.
+
+$\implies u_1 \in U_1, U_2\in u_2;\ u_1, u_2 \in U_1 \cup U_2$ 
+
+
+
+$U_1 \cup U_2$ is a subspace of $V \implies u_1 + u_2 \in U_1 \cup U_2$
+
+$\implies u_1+u_2 \in U_1 \lor u_1 + u_2 \in U_2$
+
+
+
+If $u_1+u_2 \in U_1 \iff u_1, u_2 \in U_1$ by the property of Closed Addition for $U_1$, which is contradicted with $u_2 \in U_2'$ since $U_2' \cap U_1 = \empty$. So, $u_1 + u_2 \notin U_1$.
+
+
+
+If $u_1+u_2 \in U_2 \iff u_1, u_2 \in U_2$ by the property of Closed Addition for $U_2$, which is contradicted with $u_1 \in U_1'$ since $U_1' \cap U_2 = \empty$. So, $u_1 + u_2 \notin U_2$.
+
+
+
+$\implies u_1 + u_2 \notin U_1 \cup U_2$, so the assumption is false.  $\implies U_1 \in U_2$ 
+
+
+
+
+
+Q13.
+
+Suppose $U_1, U_2, U_3$ are subspaces of $V$

@@ -6,21 +6,13 @@
 
  **Properties of arithmetic on $C$**:
 
-
-
 **Example 2.4**: 
 
 Prove $ab = ba, \forall a,b \in C$
 
-
-
 **Notation $F: R \cup C$**
 
-
-
 $R^2, R^3: \{(x,y)\}, \{(x,y,z)\}$
-
-
 
 **List and Sets**:
 
@@ -28,25 +20,17 @@ $R^2, R^3: \{(x,y)\}, \{(x,y,z)\}$
 
 **Sets**: $\{3,5\} = \{5,3\}, \{4\} = \{4,4\} = \{4,4,4\}$
 
-
-
 **Notation** $F^n : \{(x_1,...,x_n), x_j \in F, j = 1,...,n\}$
-
- 
 
 **Addition in $F_n$**: $(x_1, ...,x_n) + (y_1,...,y_n) = (x_1+y_1,...,x_n + y_n)$
 
 $x,y\in F^n, x+y = y+x$
-
-
 
 **Definition of 0**: $0 = (0, ..., 0)$ (length $n$)
 
 **Additive inverse in $F^n$**: $x + (-x) = 0$
 
 **Scalar multiplication in $F^n$**: $\lambda (x_1, ...,x_n) = (\lambda x_1,...,\lambda x_n)$
-
-
 
 **Field**: A set containing at least two distinct elements $\{0, 1\}$ 
 
@@ -93,8 +77,6 @@ $\implies -1v + 1v = v - 2v + 1v = 0 \implies v + (-2+1)v = 0 \implies v + -1v =
 
 *Suppose the Additive inverse of $v$ is $-v$* $\implies v + (-v) = 0 = v + -1v \implies -v = -1v$
 
-
-
 ## 1.C
 
 **Subspace**
@@ -109,8 +91,6 @@ A. *Additive identity*: $0 \in U$ (ensure the additive identity of $V$ is in $U$
 B. *closed under addition*: $u, w \in U \implies u + w \in U$ (addition makes sense on $U$)
 
 C. *closed under scalar multiplication*: $a\in F, u \in U \implies au \in U$ ($-u$ exists)
-
-
 
 **1.36: Sum of subsets**
 
@@ -135,6 +115,3 @@ Consider this vector $(0,0,0)$
 $(0,0,0) = (0,1,0) + (0,0,1) + (0,-1,-1) = (0,0,0)+(0,0,0)+(0,0,0)$
 
 So, $U_1 + U_2, + U_3$ is not direct sum.
-
-
-
