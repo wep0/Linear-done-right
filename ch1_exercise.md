@@ -34,7 +34,6 @@ a = b: 2a^2 = 1, a=\pm \frac{\sqrt{2}}{2}\\
 a = -b: -2a^2 = 1, a = \sqrt{-\frac{1}{2}}
 $$
 
-
 The two sqrts are $\pm \frac{\sqrt{2}}{2}$
 
 4.
@@ -145,6 +144,8 @@ $\forall x \in [0,1], h(x) = \lim_{x' \to x}{h(x')} \iff h$ is continuous.
 
 **3. closed under scalar multiplication**: similar with second item
 
+
+
 Q3.
 
 **Additive identity**: $0 \in f, 0: 0(x) = 0$, $0'(x) = 0 \implies 0'(-1) = 3(0(2)) $
@@ -165,6 +166,8 @@ $au: (-4,4) \to a\R = \R $
 
 $(au)'(-1) = a(u'(-1)) = a(3u(2)) = 3au(2) = 3(au(2))$
 
+
+
 Q4.
 
 $f: {[0,1] \to R}$, and ${f: \int_0^1 f = b}$
@@ -172,6 +175,8 @@ $f: {[0,1] \to R}$, and ${f: \int_0^1 f = b}$
 **Known**: $f$ is a subspace of $R^{[0,1]}$
 
 Additive id exists: $0 \in f,f_0: 0(x) = 0, \int_0^1 f = 0 = b$
+
+
 
 Q5.
 
@@ -201,8 +206,6 @@ $k \in F, u \in A, u = (a,b,c)$
 
 $k\in I \implies ku = (ka,kb,kc) \notin \R^3$
 
-
-
 **No.**
 
 $A:{(a,b,c)\in C^3, a^3=b^3}$
@@ -214,8 +217,6 @@ $p,q \in A$
 $p = (\sqrt{3} + i, -\sqrt{3}+i, 0), (\sqrt{3} + i)^3 = (-\sqrt{3}+i)^3 = 8i$
 
 $q = (\sqrt{3} + i, -2i, 0), (\sqrt{3} + i)^3 = (-2i)^3 = 8i$
-
-
 
 $p+q = (2\sqrt{3} + 2i, -\sqrt{3}-i, 0)$
 
@@ -230,8 +231,6 @@ Q7.
 Consider this case:
 
 $U: \{(p,q), p,q\in [-1,1]\}$
-
-
 
 $u \in U: a < -1, a > 1 \implies au \notin U$
 
@@ -249,13 +248,9 @@ Q9.
 
 Suppose $Q$ is the set of all $f$.
 
-
-
 *Additive Id*:
 
 $0\in Q, 0(x) = 0, x \in \R \implies p \in \R^+, x+p \in \R, 0(x+p) = 0 = 0(x)$
-
-
 
 *Closed Add*:
 
@@ -263,15 +258,11 @@ $f,g \in Q, f(x+p) = f(x), g(x+p) = g(x)$
 
 $(f+g)(x) = f(x)+g(x), (f+g)(x+p) = f(x+p)+g(x+p) = f(x) + g(x)$
 
-
-
 *Closed Mul*: 
 
 $a \in F, f \in Q, af(x) \in R$
 
 $af(x+p) = a(f(x+p)) = a(f(x)) = af(x)$
-
- 
 
 
 
@@ -280,8 +271,6 @@ Q10.
 *Additive Id*: 
 
 $\{0\}\in U_1 \cap V, \{0\}\in U_2 \cap V \implies \{0\}\in U_1 \cap U_2$
-
-
 
 *Closed Addition*: $U_1, U_2 \in V, \forall u_1, u_2 \in U_1 \cap U_2 \implies u_1 + u_2 \in U_1 \wedge u_1 + u_2 \in U_2 \iff u_1+u_2 \in U_1 \cap U_2$ 
 
@@ -301,9 +290,9 @@ Q12.
 
 Suppose $U_1, U_2$ are subspaces of $V$
 
-Assume $U_1 \cup U_2$ is a subspace of $V$ when $U_1 \notin U_2$
+Assume $U_1 \cup U_2$ is a subspace of $V$ when $U_1 \notin U_2$ or $U_2 \notin U_1$
 
-$U_1 \notin U_2 \implies $
+$U_1 \notin U_2 \land U_2 \notin U_1\implies $
 
 $U_1' = U_1 \setminus (U_1 \cap U_2) \ne \empty$
 
@@ -315,28 +304,74 @@ And we know $U_1' \in U_1, U_2' \in U_2' \implies U_1', U_2' \in U_1 \cup U_2$ b
 
 $\implies u_1 \in U_1, U_2\in u_2;\ u_1, u_2 \in U_1 \cup U_2$ 
 
-
-
 $U_1 \cup U_2$ is a subspace of $V \implies u_1 + u_2 \in U_1 \cup U_2$
 
 $\implies u_1+u_2 \in U_1 \lor u_1 + u_2 \in U_2$
 
-
-
 If $u_1+u_2 \in U_1 \iff u_1, u_2 \in U_1$ by the property of Closed Addition for $U_1$, which is contradicted with $u_2 \in U_2'$ since $U_2' \cap U_1 = \empty$. So, $u_1 + u_2 \notin U_1$.
 
-
-
 If $u_1+u_2 \in U_2 \iff u_1, u_2 \in U_2$ by the property of Closed Addition for $U_2$, which is contradicted with $u_1 \in U_1'$ since $U_1' \cap U_2 = \empty$. So, $u_1 + u_2 \notin U_2$.
-
-
 
 $\implies u_1 + u_2 \notin U_1 \cup U_2$, so the assumption is false.  $\implies U_1 \in U_2$ 
 
 
 
-
-
 Q13.
 
-Suppose $U_1, U_2, U_3$ are subspaces of $V$
+Suppose the union of three subspaces of $V$:  $U_1, U_2, U_3$ is a subspace of $V$, based on the result from *Q12*:
+
+$U_1 \cup U_2 \cup U_3 = (U_1 \cup U_2) \cup U_3$ is a subspace of $V$
+
+If $U_1 \cup U_2$ is a subspace of $V$:
+
+$\implies U_1 \cup U_2 \in U_3$ or $U_3 \in U_1 \cup U_2$ (By *Q12*)
+
+If $U_1 \cup U_2 \in U_3$, then it is satisfied that one of the subspaces contains the other two.
+
+If $U_3 \in U_1 \cup U_2$, By *Q12*: When $U_1 \in U_2 \implies U_3 \in U_2, U_1 \in U_2$, satisfied.
+
+If $U_1 \cup U_2$ is not a subspace of $V$ $\iff$ $U_1 \notin U_2$ and $U_2 \notin U_1$
+
+$(U_1 \cup U_2) \cup U_3$ is a subspace of $V$
+
+$\implies ID: \exist 0 \in (U_1 \cup U_2 \cup U_3)$
+
+$\implies ADD:\exist u_1, u_2 \in (U_1 \cup U_2 \cup U_3), u_1 + u_2 \in (U_1 \cup U_2 \cup U_3)$
+
+$U_1 \notin U_2 \land U_2 \notin U_1\implies$
+
+$U_1' = U_1 \setminus (U_1 \cap U_2) \ne \empty$
+
+$U_2' = U_2 \setminus (U_1 \cap U_2) \ne \empty$
+
+Consider $u_1 \in U_1', u_2 \in U_2$ *(Difinition of $u_2$ is different from Q12)*
+
+$\implies u_1 + u_2 \notin U_1 \cup U_2 \land u_1+u_2\in U_1 \cup U_2\cup U_3 \implies u_1 + u_2 \in U_3$
+
+Consider $u_1$ is an arbitrary element in $U_1'$
+
+**TODO...**
+
+
+
+Q14.
+
+Suppose $u \in U, u=(x_1,x_1,y_1,y_1), w \in W, w=(x_2,x_2,x_2,y_2) $
+
+$\implies u+w = (x_1+x_2,x_1+x_2,y_1+x_2, y_1+y_2)$
+
+Suppose $x,y,z = x_1+x_2,y_1+x_2, y_1+y_2$.
+
+$\forall x\in F, \exist (x_1 + x_2) \in F$
+
+$\forall y\in F, \exist (y_1 + x_2) \in F$
+
+$\forall z\in F, \exist (y_1 + y_2) \in F$
+
+$\implies x,y,z \in F$
+
+$u+w - (x,x,y,z) = 0 \implies u+w = (x,x,y,z)$
+
+
+
+Q15
