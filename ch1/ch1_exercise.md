@@ -390,8 +390,6 @@ $u_1 + w = u_2 + w \iff u_1 = u_2$
 
 $\implies \forall u_1 , \forall u_2 , u_1 = u_2 \iff U_1 = U_2$
 
-
-
 ##### Q20
 
 $U = \{(x,x,y,y) \in F^4 \}$
@@ -442,7 +440,7 @@ $\implies a = a' = 0$
 
 ##### Q23
 
-Consider this conter-example:
+Consider this counter-example:
 
 $U = \{(x,0) \in \R^2\}, W = {(0,y) \in \R^2}, W = \{(z,z) \in \R^2\}$
 
@@ -452,10 +450,30 @@ $U_e: \{e: \R \to \R, e(-x) = e(x), x \in \R \}$
 
 $U_o: \{o: \R \to \R, o(-x) = -o(x), x \in \R \} $
 
-$U_e + U_o: \{e+o\} \in \R^\R$
+$U_e \oplus U_o: \{e+o\} \in \R^\R$
 
-$(e+o)(-x) = e(-x) + o(-x) = e(x) - o(x)$
+$0 = (e+o)(-x) = e(-x) + o(-x) = e(x) - o(x)$
 
-$0 = e(x) - o(x) \implies e(x) = o(x)$
+$0 = e(x) - o(x) \implies e(x) = o(x) = -o(-x) = e(-x)$
 
-**TODO...**
+$e(x) = o(x) \implies -o(-x) = -e(-x) \implies e(-x) = -e(-x)$
+
+$\iff e = 0 \implies e= o = 0$.  We proved only when $e,o =0$, $u \in U_e+U_o, u = 0$
+
+So, $U_e + U_o = U_e \oplus U_o$
+
+
+
+ $U_e \oplus U_o \implies U_e \cap U_o = \{0\}$
+
+We want to prove $U_e \oplus U_o = \R^\R$
+
+$u \in U_e \oplus U_o, u = e+o, u(x) = e(x) + o(x) $
+
+$f \in \R^\R, f(x) \in \R$
+
+We want to prove $u(x) = f(x)$, and we know $e,o \in \R^\R$
+
+$e(x) + o(x) = e(-x) - o(-x) = e(-x) + o(x) = f_e(-x) + f(x)$
+
+**TODO: **
