@@ -466,14 +466,20 @@ So, $U_e + U_o = U_e \oplus U_o$
 
  $U_e \oplus U_o \implies U_e \cap U_o = \{0\}$
 
-We want to prove $U_e \oplus U_o = \R^\R$
+We want to prove $U = U_e \oplus U_o = \R^\R$
 
 $u \in U_e \oplus U_o, u = e+o, u(x) = e(x) + o(x) $
 
 $f \in \R^\R, f(x) \in \R$
 
-We want to prove $u(x) = f(x)$, and we know $e,o \in \R^\R$
+We want to prove $\forall f \in \R^\R, \exist u \in U \land \forall u \in U, \exist f \in \R^\R$, 
 
-$e(x) + o(x) = e(-x) - o(-x) = e(-x) + o(x) = f_e(-x) + f(x)$
+$f \in \R^\R, f : \R \to \R, $
 
-**TODO: **
+$u = e+o, u \in U$
+
+Consider $f = e' = \frac{e}{2}; o' = -\frac{o}{2} $, and we could see $e’ \in U_e,  o’ \in U_o,$
+
+$e' + o' = \frac{e-o}{2} \implies (e'+o')$
+
+**TODO…**
